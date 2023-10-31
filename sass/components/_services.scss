@@ -1,0 +1,41 @@
+.services__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+  padding-bottom: 50px;
+  margin: 0;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  &__image {
+    width: 370px;
+    height: 294px;
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  &__text {
+    background-color: $bottom-color;
+    color: $color-white;
+    height: 70px;
+    width: 370px;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__bacground1 {
+    background-image: url(../images/caja1.jpg);
+  }
+  &__bacground2 {
+    background-image: url(../images/caja2.jpg);
+  }
+  &__bacground3 {
+    background-image: url(../images/caja3.jpg);
+  }
+}

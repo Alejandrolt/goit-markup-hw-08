@@ -1,0 +1,38 @@
+.hero {
+  padding: 200px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
+    url(../images/Meethero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  max-width: 1600px;
+  margin: auto;
+  &__title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    font-style: normal;
+    color: $color-white;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+  &__button {
+    color: $color-white;
+    background-color: $brand-color;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    height: 50px;
+    cursor: pointer;
+  }
+}

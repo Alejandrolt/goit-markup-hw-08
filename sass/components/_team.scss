@@ -1,0 +1,75 @@
+.team__background {
+  background-color: $company-color;
+}
+
+.team__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
+  text-align: center;
+  margin: 0;
+}
+
+.team__block {
+  display: flex;
+  justify-content: space-between;
+  &--list {
+    display: flex;
+    flex-basis: calc((100% - 3 * 37px) / 4);
+    text-align: center;
+  }
+}
+
+.card-team {
+  background-color: $color-white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &__name {
+    color: $tittle-color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__role {
+    color: $letter-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+  }
+
+  &__networks {
+    fill: $svg-color;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-white;
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background-color: $brand-color;
+      fill: $color-white;
+    }
+  }
+}
+
+.networks__team {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
