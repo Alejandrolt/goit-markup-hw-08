@@ -1,6 +1,15 @@
 .footer {
   display: flex;
   gap: 70px;
+  @media (max-width: 768px) {
+    width: 768px;
+    flex-wrap: wrap;
+    padding: 80px;
+  }
+  @media (max-width: 480px) {
+    width: 480px;
+    justify-content: center;
+  }
   &__background {
     background-color: $bottom-color;
     padding-top: 60px;
@@ -29,9 +38,20 @@
     padding-left: 70px;
     margin: 0;
     padding-bottom: 20px;
+    @media (max-width: 480px) {
+      justify-content: center;
+      padding-left: 40px;
+    }
   }
   &__form {
     display: flex;
+    @media (max-width: 768px) {
+      width: 768px;
+      justify-content: center;
+    }
+    @media (max-width: 480px) {
+      width: 480px;
+    }
   }
   &__text {
     color: $color-white;
@@ -42,6 +62,9 @@
     text-align: left;
     margin: 0;
     padding-bottom: 20px;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
   &__input {
     width: 358px;
@@ -52,6 +75,9 @@
     background-color: $bottom-color;
     color: $color-white;
     padding: 15px 16px;
+    @media (max-width: 768px) {
+      width: 450px;
+    }
   }
   &__button {
     display: inline-flex;
@@ -78,6 +104,9 @@
   display: flex;
   gap: 10px;
   padding-left: 70px;
+  @media (max-width: 480px) {
+    padding-left: 10px;
+  }
   &-footer__item {
     fill: $color-white;
     border-radius: 50%;

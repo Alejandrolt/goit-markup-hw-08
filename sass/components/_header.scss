@@ -2,6 +2,9 @@
   display: inline-flex;
   gap: 50px;
   margin-left: 93px;
+  @media (max-width: 480px) {
+    display: none;
+  }
   &__link {
     text-decoration: none;
     color: $tittle-color;
@@ -49,6 +52,9 @@
   display: flex;
   align-items: center;
   gap: 30px;
+  @media (max-width: 480px) {
+    display: none;
+  }
   &__text {
     text-decoration: none;
     text-align: left;

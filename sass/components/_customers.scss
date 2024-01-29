@@ -6,6 +6,12 @@
   margin-top: 59px;
   margin-bottom: 44px;
   font-size: 36px;
+  @media (max-width: 768px) {
+    width: 768px;
+  }
+  @media (max-width: 480px) {
+    width: 480px;
+  }
 }
 
 .customers {
@@ -13,6 +19,16 @@
   justify-content: space-around;
   align-items: center;
   padding-bottom: 151px;
+  @media (max-width: 768px) {
+    width: 768px;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+  }
+  @media (max-width: 480px) {
+    width: 480px;
+  }
   &__icon {
     width: 170px;
     height: 81px;

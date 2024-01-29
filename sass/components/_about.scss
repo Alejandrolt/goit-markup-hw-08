@@ -1,8 +1,16 @@
 .about {
   display: flex;
   justify-content: space-between;
-  display: flex;
   column-gap: 30px;
+  @media (max-width: 768px) {
+    width: 768px;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 480px) {
+    width: 480px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   &__svg {
     height: 120px;
     background-color: $company-color;
@@ -10,6 +18,10 @@
     justify-content: center;
     align-items: center;
     padding: 25px 100px;
+    @media (max-width: 480px) {
+      width: 450px;
+      justify-content: center;
+    }
   }
   &__title {
     font-size: 14px;
